@@ -13,7 +13,7 @@ const OrderList = () => {
     const [bookings, setBookings] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:4000/bookingsByEmail', {
+        fetch('https://hidden-escarpment-22929.herokuapp.com/bookingsByEmail', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify({email: loggedInUser.email})

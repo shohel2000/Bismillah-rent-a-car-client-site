@@ -10,7 +10,7 @@ const MangeServicce = () => {
     const [page , setPage] = useState('Service Maintain')
 
     useEffect(() => {
-        fetch('http://localhost:4000/showService')
+        fetch('https://hidden-escarpment-22929.herokuapp.com/showService')
             .then(res => res.json())
             .then(data => {
                 setService(data);

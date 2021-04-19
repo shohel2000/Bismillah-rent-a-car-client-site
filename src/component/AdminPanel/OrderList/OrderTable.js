@@ -7,7 +7,7 @@ const OrderTable = ({ bookings }) => {
         console.log(id);
         console.log(name);
 
-        fetch(`http://localhost:4000/update/${id}`,{
+        fetch(`https://hidden-escarpment-22929.herokuapp.com/update/${id}`,{
             method: 'PATCH',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify({status: name})

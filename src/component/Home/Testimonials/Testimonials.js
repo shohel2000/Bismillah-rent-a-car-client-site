@@ -11,7 +11,7 @@ const Testimonials = () => {
     const [testimonialData, setTestimonialData] = useState([]);
     const [preloaderVisibility, setPreloaderVisibility] = useState('block')
     useEffect(() => {
-        fetch('http://localhost:4000/showReview')
+        fetch('https://hidden-escarpment-22929.herokuapp.com/showReview')
         .then(res => res.json())
         .then(data => {
             // console.log(testimonialData);

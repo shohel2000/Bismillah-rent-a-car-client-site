@@ -9,7 +9,7 @@ const MakeAdmin = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data);
-        fetch('http://localhost:4000/makeAdmin', {
+        fetch('https://hidden-escarpment-22929.herokuapp.com/makeAdmin', {
             method: 'POST',
             headers: {'content-type': 'application/json'},
             body: JSON.stringify(data)

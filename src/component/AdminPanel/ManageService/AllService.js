@@ -6,7 +6,7 @@ const AllService = ({ events }) => {
         padding: '10px'
     }
     const handleDelete = (id) => {
-        fetch(`http://localhost:4000/delete/${id}`, {
+        fetch(`https://hidden-escarpment-22929.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

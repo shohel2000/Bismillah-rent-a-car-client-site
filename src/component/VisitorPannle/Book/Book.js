@@ -27,7 +27,7 @@ const Book = () => {
             paymentId,
             orderTime: new Date()
         }
-        fetch('http://localhost:4000/booking', {
+        fetch('https://hidden-escarpment-22929.herokuapp.com/booking', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(bookingInfo)
@@ -40,7 +40,7 @@ const Book = () => {
         })
     }
     useEffect(() => {
-        fetch('http://localhost:4000/service/' + id)
+        fetch('https://hidden-escarpment-22929.herokuapp.com/service/' + id)
             .then(res => res.json())
             .then(data => {
                 setServices(data)

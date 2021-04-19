@@ -6,7 +6,7 @@ const Service = () => {
     const [servicesData, setServicesData] = useState([]);
     const [preloaderVisibility, setPreloaderVisibility] = useState('block')
     useEffect(() => {
-        fetch('http://localhost:4000/showService')
+        fetch('https://hidden-escarpment-22929.herokuapp.com/showService')
         .then(res => res.json())
         .then(data => {
             setServicesData(data)
