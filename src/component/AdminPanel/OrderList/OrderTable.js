@@ -7,17 +7,17 @@ const OrderTable = ({ bookings }) => {
         console.log(id);
         console.log(name);
 
-        fetch(`https://hidden-escarpment-22929.herokuapp.com/update/${id}`,{
+        fetch(`https://hidden-escarpment-22929.herokuapp.com/update/${id}`, {
             method: 'PATCH',
-            headers: {'content-type': 'application/json'},
-            body: JSON.stringify({status: name})
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ status: name })
         })
-        .then(res => res.json())
-        .then(data => {
-            if(data) {
-                console.log(data);
-            }
-        })
+            .then(res => res.json())
+            .then(data => {
+                if (data) {
+                    console.log(data);
+                }
+            })
     }
     const orderContainer = {
         padding: '10px',
@@ -39,6 +39,7 @@ const OrderTable = ({ bookings }) => {
                                 <button onClick={() => handleStatus(booking._id, 'Pending')}  className="btn btn-danger">Pending</button> <br/>
                                 <button onClick={() => handleStatus(booking._id, 'Done')}  className="btn btn-success">Done</button> <br/>
                                 <button onClick={() => handleStatus(booking._id, 'On Going')}  className="btn btn-info">On Going</button>
+                                
                             </div>
                         </div>
                     </div>

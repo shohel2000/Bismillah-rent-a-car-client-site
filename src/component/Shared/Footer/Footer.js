@@ -11,7 +11,7 @@ const Footer = () => {
     ]
     const ourAddress = [
         {name: "Bissmillah Rent-A-Car ,Tejgaon, Dhaka-1208" , link: "//google.com/map"},
-        {name: "YARD" , link: "//google.com/map"},
+        {name: "BD-Link" , link: "//google.com/map"},
        
     ]
     const resources = [
@@ -44,14 +44,15 @@ const Footer = () => {
                         </ul>
                         <div className="mt-5">
                             <h6>Call now</h6>
-                            <button className="btn btn-success">+880-1644-78-9051</button>
+                            <button className="btn btn-success">+880-123456789</button>
                         </div>
                     </FooterCol>
                 </div>
-                <div className="copyRight text-center">
+                
+            </div>
+            <div className="copyRight text-center pt-2 pb-1">
                     <p>Copyright {(new Date()).getFullYear()} All Rights Reserved</p>
                 </div>
-            </div>
         </footer>
         
     );

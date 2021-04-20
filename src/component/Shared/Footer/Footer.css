@@ -14,8 +14,13 @@
     border-radius: 50%;
     border: 1px solid #6ACECE;
     padding: 10px;
+    transition: .4s;;
 }
-.social-media .active-icon{
+.social-media .icon:hover{
     background-color: #6ACECE ;
     color:white;
+}
+.copyRight{
+    background: gray;
+    color: white;
 }

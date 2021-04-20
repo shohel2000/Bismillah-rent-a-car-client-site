@@ -22,7 +22,7 @@ const Banner = () => {
                         <div style={{color: 'black', backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
                             <h3>Private Car</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            <button className="btn btn-success">Explore</button>
+                            <button className="btn btn-success mb-3">Explore</button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -38,7 +38,7 @@ const Banner = () => {
                     <div style={{color: 'black', backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
                             <h3>Bike</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            <button className="btn btn-success">Explore</button>
+                            <button className="btn btn-success mb-3">Explore</button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -54,7 +54,7 @@ const Banner = () => {
                     <div style={{color: 'black', backgroundColor: 'rgba(255, 255, 255, 0.5)'}}>
                             <h3>Hiace</h3>
                             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                            <button className="btn btn-success">Explore</button>
+                            <button className="btn btn-success mb-3">Explore</button>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
